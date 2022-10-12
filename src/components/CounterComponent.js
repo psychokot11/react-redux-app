@@ -4,21 +4,22 @@ import { decrement } from "../features/counterSlice";
 
 export default function Counter() {
   const number = useSelector((state) => state.counter.value);
+  const theme = useSelector((state) => state.theme.value);
   const dispatch = useDispatch();
-  console.log(number);
 
   return (
     <>
       <button
+        className={`CounterApp_CounterButton CounterApp_CounterButton--${theme}`}
         onClick={() => {
           dispatch(decrement(1));
-          console.log(number + "onClicked");
         }}
       >
         -
       </button>
-      <p>{number}</p>
+      <span className="CounterApp_TextContainer">{number}</span>
       <button
+        className={`CounterApp_CounterButton CounterApp_CounterButton--${theme}`}
         onClick={() => {
           dispatch(increment(1));
         }}

@@ -1,0 +1,39 @@
+.CounterApp_Container {
+  background-color: rgb(255, 211, 67);
+  padding: 50px;
+}
+
+.CounterApp_Container--dark {
+  background-color: black;
+  color: rgb(255, 211, 67);
+}
+
+.CounterApp_CounterButton {
+  font-size: 42px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.CounterApp_CounterButton--dark {
+  background-color: rgb(255, 224, 123);
+}
+
+.CounterApp_ThemeButton {
+  font-size: 36px;
+  display: block;
+  margin: 0 auto;
+}
+
+.CounterApp_ThemeButton--dark {
+  background-color: rgb(255, 224, 123);
+}
+
+.CounterApp_TextContainer {
+  font-size: 48px;
+}
+
+.CounterApp_CatContainer {
+  font-size: 36px;
+  padding: 50px;
+}

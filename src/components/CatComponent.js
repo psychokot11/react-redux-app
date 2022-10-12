@@ -1,7 +1,14 @@
+import { useSelector } from "react-redux";
+
 export default function Cat() {
-  return (
-    <>
-      <div>cat image</div>
-    </>
-  );
+  const number = useSelector((state) => state.counter.value);
+  if (number === 17) {
+    return (
+      <>
+        <div className="CounterApp_CatContainer">🙀{number}🙀</div>
+      </>
+    );
+  } else {
+    return null;
+  }
 }
